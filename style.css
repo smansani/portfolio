@@ -1,0 +1,487 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#header{
+  width: 100%;
+  height:100vh;}
+body{
+  background-color:#222831;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+  padding-left: 2px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 2px;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 2px;
+  padding-left: 50px;
+}
+
+nav img {
+  order: -1; 
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color:#EEEEEE;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background:#76ABAE;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: width 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.top{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+#image{
+  position: absolute;
+  right:100px;
+  top:150px;
+}
+
+.htext{
+  position: absolute;
+  font-size: 20px;
+  font-family: cursive;
+  top:45%;
+  left:30px;
+  color: wheat;
+}
+.htext span{
+  color:#E8751A;
+  font-size: 50px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.htext button{
+  border: none;
+  border-radius: 10px;
+  background-color:#76ABAE;
+  height:30px;
+  width:100px;
+  color: antiquewhite;
+  font-family: cursive;
+}
+.htext button:hover {
+  background-color:rgb(206, 188, 110); /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+
+
+/*-------about------*/
+#about{
+  position: absolute;
+  background-color: black;
+  width:100%;
+  height: 300px;
+  align-items: center;
+  border-radius: 20px;
+}
+.containera {
+  width: 100%; 
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+
+.section1 {
+  left: 0;
+  width: 40%;
+   
+}
+.section1 img{
+  padding: 3%;
+}
+
+.section2 {
+  left:0;
+  width: 60%;
+
+}
+
+.section2 h1{
+  color: white;
+}
+.section2 p{
+  color: aliceblue;
+}
+
+.section1 img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+   
+}
+/*----skills----*/
+
+#skill {
+  width: 100%; /* Adjust width as needed */
+  height: auto; /* Adjust height as needed */
+  position: absolute;
+  margin-top: 320px;
+  background-color:#31363F;
+  padding: 20px;
+  display: flex;
+  border-radius: 20px;
+}
+
+.skills-section {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  margin-top: 400px;
+}
+
+.skills h3 {
+  font-size: 2.5em;
+  color: #ff6600;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill-item {
+  text-align: center;
+  flex: 0 0 calc(33.333% - 20px);
+}
+
+.skill-item img {
+  height: 80px;
+  width: 80px;
+}
+
+.skill-item p {
+  font-size: 1.2em;
+  color: #ddd;
+  transition: 0.2s all ease-in;
+}
+
+
+.skills-section{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skills-text{
+  margin-top: 150px;
+}
+
+
+.skills-list  skill-item img{
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-item:hover img {
+  box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
+  top: -20px;
+  transition: 0.2s all ease-in;
+  border-radius: 50px;
+  transform: scale(1.2);
+}
+
+/*experience*/
+
+#experience {
+  background-color: #31363F;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  height: 90vh;
+  width: 100%;
+  position: relative;
+}
+
+
+#ipc{
+  background-color:#31363F;
+  display: flex;
+  height: 85vh;
+}
+#navbar {
+  background-color: #31363F;
+  position: relative;
+  left: 0%;
+  width: 30%;
+  padding-top: 130px;
+  padding-left: 10%;
+}
+
+#navbar ul {
+  list-style-type: none; /* Remove the list-style bullets */
+  padding: 40px; /* Remove default padding */
+  font-size: 40px;
+  line-height: 100px;
+}
+
+#navbar ul li {
+  display: flex; /* Display list items horizontally */
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  transition: all 0.3s ease; /* Adding transition for smooth effect */
+  color: #ff6600;
+}
+
+#navbar ul li a:hover {
+  padding-left: 10px; /* Adjust this value as needed */
+  color: white;
+}
+
+
+
+#intern {
+  background-color:#76ABAE;
+  position: relative; /* Change from relative to absolute */
+  margin-left: 100px; /* Align to the right within the parent container */
+  top: 0;
+  bottom: 0;
+  width: 70%;
+  height: 100%;
+  display:none;
+  padding: 200px;
+}
+#intern img{
+  display:block;
+  padding: 20px;
+  height:100%;
+  width:400px;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 100%; /* Updated to cover both image and text */
+  opacity: 0; /* Initially hidden */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  font-family:cursive;
+  font-size: 18px;
+  color:white;
+  transition: opacity 0.7s; /* Smooth opacity transition */
+}
+
+
+
+.skvi {
+  position: relative;
+  border-radius: 20px;
+  background-color: #31363F;
+  height: 50%;
+}
+
+.skv:hover .layer {
+  opacity: 1; /* Show the layer on hover */
+}
+
+.skvi:hover .layer {
+  opacity: 1; /* Show the layer on hover */
+}
+
+
+.layer-content {
+  position: relative;
+  z-index: 1; /* Ensure text is on top of the layer */
+}
+
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.layer a {
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+#proj {
+  background-color:#76ABAE;
+  position: relative; /* Change from relative to absolute */
+  margin-left: 100px; /* Align to the right within the parent container */
+  top: 0;
+  bottom: 0;
+  width: 70%;
+  height: 100%;
+  display:none;
+  border-radius: 20px;
+  flex-wrap: wrap;
+
+}
+#proj img{
+  display:flex;
+  padding: 20px;
+  height: 330px;
+  width:350px;
+  border-radius: 20px;
+}
+
+/* CSS code to style the Font Awesome icon */
+.fa-external-link-alt {
+  /* Add additional styles here */
+  font-size: 30px; /* Adjust the font size */
+  color: #fff;
+  color: rgb(255, 0, 0); /* Change the color */
+  margin-left: 5px; /* Adjust the margin */
+}
+
+
+/*contact me*/
+.contact-me {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 50px;
+
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.contact-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-text {
+  text-align: center;
+}
+
+.contact-text h2 {
+  font-size: 2.5em;
+  color: #ff6600;
+}
+
+.contact-text input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.contact-text button {
+  background-color:#31363F;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.contact-text button:hover {
+  background-color:#76ABAE;
+
+}
+
+.contact-me {
+  /* ... */
+  background-image: url('path/to/subtle-texture.png'); /* Add a subtle texture */
+  background-size: cover;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Add depth */
+}
+
+.contact-text h2 {
+  color: yellowgreen;
+  font-weight: 300; /* Lighter font weight for a more approachable feel */
+}
+
+.input-wrapper {
+  margin-bottom: 15px;
+}
+
+.message-box textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.success-message {
+  color: #4CAF50; 
+  font-weight: bold;
+}
+#link{
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 20px;
+
+}
+.social-icon img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+  background-color: #333;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover img {
+
+  box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
+  transform: scale(1.2) rotate(360deg);
+}
+
+

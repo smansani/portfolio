@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <div class="container">
+    <div id="header">
+        <div class="container"><!--main cont-->
+            <div id="menu" class="menu">
+                <nav>
+                    <img src="https://raw.githubusercontent.com/smansani/portfolio/main/WhatsApp%20Image%202024-03-16%20at%2012.49.36_90b61f29.jpg" style="border-radius: 50%; height: 40px; width: 40px;" alt="Profile Image">
+                    <div class="top">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#skills">SKILLS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                  </div>
+                </nav>
+            </div>
+            <div id="image">
+                <img src="https://raw.githubusercontent.com/smansani/portfolio/main/WhatsApp%20Image%202024-03-16%20at%2012.49.36_90b61f29.jpg" style="height: 500px;width: 500px;" alt="Header Image">
+            </div>  
+            <div class="htext">
+                <p>Hello, there I'M<br><span> SREEHARSHA MANSANI</span></p>
+                <p>Currently studying at GITAM</p><br>
+                <div class="download">
+                    <button type="button" onclick="resume()">My Resume</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function resume() {
+        window.open("resume.pdf",'_blank');
+    }
+</script>
+  <!--ABOUT-->   
+    <div id="about">
+      <div class="containera">
+        <div class="section1">
+          <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745">
+        </div>
+        <div class="section2">
+          <h1>ABOUT ME</h1><br>
+          <p>I am Sree Harsha, a third-year student pursuing a Bachelor's degree in Computer Science and Engineering at Gitam University. During my academic journey, I have had the opportunity to gain valuable internship experience at Codesoft. I have a strong enthusiasm for acquiring new knowledge and I am skilled in programming languages like Java, HTML, C, and SQL. Furthermore, I have expertise in playing badminton and have successfully completed various projects in Artificial Intelligence and application development</p>
+        </div>
+      </div>
+    </div>
+  <!--SKILLS-->  
+  <div class="skills" id="skills">
+    <div class="skills-section">
+      <div class="skills-text">
+        <h3>My Skills</h3>
+      </div>
+      <div class="skills-list">
+        <div class="skill-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML">
+          <p>HTML</p>
+        </div>
+        <div class="skill-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS">
+          <p>CSS</p>
+        </div>
+        <div class="skill-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/919/919828.png" alt="JavaScript">
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Python">
+          <p>node js</p>
+        </div>
+        <div class="skill-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVNqc5MFiu1GA6DO30mLB3ssvXnmv-2AnkOMBIndXp6w&s" alt="Python">
+          <p>Python</p>
+        </div>
+        <div class="skill-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java">
+          <p>Java</p>
+        </div>
+        <div class="skill-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThLCXD7_XgN3edj2hgiueZ2izSuOsEICa7nTYeP2yz0A&s" alt="C#">
+          <p>C</p>
+        </div>
+        <div class="skill-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWS8s59YrNOfvERqrmKnsa_N0HBmVkfaDRtnNl7jjVEQ&s" alt="react">
+          <p>react</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--conttact me-->
+  <div class="contact-me" id="contact">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+      <div class="contact-text">
+        <h2>contact-me</h2>
+        <input type="hidden" name="access_key" value="a5922ed2-9bb0-4765-9a04-3de80c210fe5">
+  
+        <div class="input-wrapper">
+          <label for="your_name">Your Name:</label>
+          <input type="text" id="your_name" name="your_name" required>
+        </div>
+  
+        <div class="input-wrapper">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"  required>
+        </div>
+        <button type="submit">Send Message </button><br><br>
+        <div id="link">
+          <div class="social-icon github">
+            <a href="https://github.com/smansani"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub"></a>
+          </div>
+          <div class="social-icon linkedin">
+            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"><img src="https://static-00.iconduck.com/assets.00/linkedin-icon-2048x2048-ya5g47j2.png" alt="LinkedIn"></a>
+          </div>
+        </div>
+  
+        <div class="success-message" hidden>Message sent! I'll be in touch soon.</div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
